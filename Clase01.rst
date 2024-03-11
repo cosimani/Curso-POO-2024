@@ -144,7 +144,7 @@ Ejemplos con namespace
 	
 	int main()  {
 	    using enteros::var1;
-	    using con_decimal::var2;
+	    using con_decimales::var2;
 
 	    cout << var1 << endl;
 	    cout << var2 << endl;
