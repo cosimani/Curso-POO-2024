@@ -143,7 +143,7 @@ lowerCamelCase: Igual a UpperCamelCase con excepción de la primer palabra. Ejem
 
 
 Primer aplicación en Qt con interfaz gráfica
-=============================================
+============================================
 
 - Qt(Quasar Toolkit) 
 	- Biblioteca para desarrollo de software de Quasar Technologies
@@ -188,9 +188,17 @@ Primer aplicación en Qt con interfaz gráfica
 
 
 
-
-
 Ejercicio 8:
+============
+
+- En un Empty qmake Project
+- Crear una función genérica que imprima por consola una descripción de cualquier objeto.
+- El mensaje puede ser algo así: "Persona con nombre Lucrecia", "Poste con altura de 8 metros y 15 cm de diámetro".
+- Probar esta función en main utilizando dos objetos de la clase Persona y dos objetos de la clase Poste.
+- Incluir todo el código fuente en el archivo main.cpp.
+
+
+Ejercicio 9:
 ============
 
 - En un Empty qmake Project
@@ -201,7 +209,7 @@ Ejercicio 8:
 - Probar esta función en main utilizando dos arrays (int y float) y ordenar de mayor a menor y el otro al revés
 
 
-Ejercicio 9:
+Ejercicio 10:
 ============
 
 - En un Empty qmake Project
@@ -213,7 +221,7 @@ Ejercicio 9:
 - Por último, publicar los datos de cada uno de los jugadores con ``std::cout``
 
 
-Ejercicio 10
+Ejercicio 11:
 ============
 
 - En un Empty qmake Project
@@ -221,7 +229,7 @@ Ejercicio 10
 - Invocar al método show() de cada uno de estos 4 objetos
 - Notar que cada objeto se muestra independiente
 
-Ejercicio 11
+Ejercicio 12:
 ============
 
 - En un Empty qmake Project
