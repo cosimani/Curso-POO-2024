@@ -143,7 +143,7 @@ lowerCamelCase: Igual a UpperCamelCase con excepción de la primer palabra. Ejem
 
 
 Primer aplicación en Qt con interfaz gráfica
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=============================================
 
 - Qt(Quasar Toolkit) 
 	- Biblioteca para desarrollo de software de Quasar Technologies
