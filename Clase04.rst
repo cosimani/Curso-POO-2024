@@ -28,7 +28,7 @@ Función Genérica
 
 - Supongamos que debemos implementar una función que imprima en la salida los valores de un array de enteros:
 
-.. code-block:: c
+.. code-block::
 
 	void imprimir ( int v[], int cantidad )  {
 	    for ( int i = 0 ; i < cantidad ; i++ )
@@ -45,13 +45,13 @@ Función Genérica
 
 - Ahora necesitamos la impresión de un array de float
 
-.. code-block:: c
+.. code-block::
 
 	void imprimir( float v[], int cantidad );
 
 - Vemos que las versiones se diferencian por el tipo de datos del array. Entonces podemos utilizar lo siguiente:
 
-.. code-block:: c
+.. code-block::
 
 	template < class T > void imprimir ( T v[], int cantidad )  {
 	    for ( int i=0 ; i < cantidad ; i++ )
@@ -71,7 +71,7 @@ Función Genérica
 
 - El compilador utiliza el código de la función genérica como plantilla para crear automáticamente dos funciones sustituyendo T por el tipo de dato concreto.
 
-.. code-block:: c
+.. code-block::
 
 	Con T = int     utiliza -->     void imprimir( int v[], int cantidad )
 
@@ -79,13 +79,13 @@ Función Genérica
 
 - Aquí, la única operación que realizamos sobre los valores de tipo T es:
 
-.. code-block:: c
+.. code-block::
 
 	std::cout << v[ i ]
 
 - Esto pone una restricción, ya que sólo se admitirá los tipos de datos para los que se puedan imprimir en pantalla con:
 
-.. code-block:: c
+.. code-block::
 
 	std::cout <<
 
@@ -97,7 +97,7 @@ Revisión de la clase Poste
 **¿ Cómo funciona el método getDatos() ?**
 
 
-.. code-block:: c
+.. code-block::
 
 	class Poste  {
 	private:
@@ -165,7 +165,7 @@ Primer aplicación en Qt con interfaz gráfica
 
 - Creación de una aplicación Qt
 
-.. code-block:: c
+.. code-block::
 
 	#include <QApplication>	
 	// - Administra los controles de la interfaz
@@ -207,11 +207,10 @@ Ejercicio 9:
 - Es decir, se le pasa un array con sus valores en cualquier orden, y la función genérica los imprime ordenados
 - Que el prototipo sea: ``template < class T > void imprimir( T * v, int cantidad, bool mayor_a_menor );``
 - Utilizar el método de ordenamiento por inserción
-- Probar esta función en main utilizando dos arrays (int y float) y ordenar de mayor a menor y el otro al revés
-
+- Probar esta función en main utilizando dos arrays (int y float) y ordenar de mayor a menor y el otro al revés.
 
 Ejercicio 10:
-============
+=============
 
 - En un Empty qmake Project
 - Crear una clase Jugador con atributos ``int velocidad``, ``int fuerza`` y ``std::string nombre``
@@ -223,7 +222,7 @@ Ejercicio 10:
 
 
 Ejercicio 11:
-============
+=============
 
 - En un Empty qmake Project
 - En la función main crear un objeto de la clase QLabel, uno de QWidget, uno de QPushButton y uno de QLineEdit
@@ -231,14 +230,13 @@ Ejercicio 11:
 - Notar que cada objeto se muestra independiente
 
 Ejercicio 12:
-============
+=============
 
 - En un Empty qmake Project
 - En la función main crear un objeto de la clase QLabel y pegarle en el mismo objeto QLabel una imagen de alta resolución.
 - Que la imagen se obtenga desde un archivo JPG del disco duro
 - Mostrar el QLabel de forma maximizada y que la imagen no se deforme.
 - Al cabo de 3 segundos, el QLabel y la aplicación se deberá cerrar
-
 
 Aclaraciones:
 =============
