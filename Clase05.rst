@@ -17,9 +17,8 @@ Registro en video de algunos temas de la clase de hoy
 `Dibujar a mano - QByteArray - Preprocesador 2021 <https://www.youtube.com/watch?v=8Gu5_ejipus>`_
 
 
-
 Signals y slots
-^^^^^^^^^^^^^^^
+===============
 
 - signal y slot son funciones.
 - Las signals de una clase se comunican con los slots de otra.
@@ -29,20 +28,20 @@ Signals y slots
 - SIGNAL() y SLOT() son macros (convierten a cadena).
 - emisor y receptor son punteros a QObject
 
-
-.. code-block:: c
-
+.. code-block::
+	
 	QObject::connect( emisor, SIGNAL( signal ), receptor, SLOT( slot ) );
+
 	
 - Se puede remover la conexión:
 
-.. code-block:: c
+.. code-block::
 
 	QObject::disconnect( emisor, SIGNAL( signal ), receptor, SLOT( slot ) );
 
 **Ejemplo:** QPushButton para cerrar la aplicación.
 
-.. code-block:: c
+.. code-block::
 
 	#include <QApplication>
 	#include <QPushButton>
@@ -67,7 +66,7 @@ Macro Q_OBJECT
 	
 **Ejemplo:** Control de volumen
 
-.. code-block:: c
+.. code-block::
 
 	#include <QApplication>
 	#include <QWidget>
@@ -116,7 +115,7 @@ QGridLayout
 QLineEdit
 ^^^^^^^^^
 
-.. code-block:: c
+.. code-block::
 
 	QLineEdit * le = new QLineEdit;
 	le->setEchoMode( QLineEdit::Password );
@@ -129,7 +128,7 @@ QLineEdit
 
 **Señales**
 
-.. code-block:: c
+.. code-block::
 
 	// void returnPressed()  // Detecta cuando el usuario presiona Enter.
 
@@ -144,7 +143,7 @@ QLineEdit
 Dibujar a mano sobre un QWidget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: c
+.. code-block::
 
 	// mapa.h
 	#include <QWidget>
@@ -174,7 +173,7 @@ Dibujar a mano sobre un QWidget
 - Pinta a bajo nivel sobre widgets.
 - Debe ser utilizado dentro del método ``paintEvent( QPaintEvent * )``.
 
-.. code-block:: c
+.. code-block::
 
 	void drawEllipse( int x, int y, int ancho, int alto );
 	void drawImage( int x, int y, QImage & image );
