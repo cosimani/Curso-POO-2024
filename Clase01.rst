@@ -35,9 +35,6 @@ Registro en video de algunos temas de la clase de hoy
 `Espacio de nombres 2021 <https://www.youtube.com/watch?v=oUVACqK4ssg>`_ 
 
 
-
-
-
 Instalación de herramientas
 ===========================
 
