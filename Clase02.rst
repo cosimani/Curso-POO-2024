@@ -48,7 +48,7 @@ vector
 - La inserción en cualquier posición distinta a la última es ineficiente.
 - Se encuentra en #include <vector> en el namespace std
 
-.. code-block:: c
+.. code-block::
 
 	vector< int > v1;                     // vector vacío
 	vector< int > v2( 15 );               // vector de 15 elementos
@@ -57,7 +57,7 @@ vector
 
 **Algunas operaciones**
 
-.. code-block:: c
+.. code-block::
 
 	size()          // Tamaño
 	bool empty()    // Está vacío?
