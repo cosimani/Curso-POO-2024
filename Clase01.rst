@@ -54,7 +54,7 @@ Biblioteca estándar de C++
 - Está en el espacio de nombres ``std``
 - En la biblioteca estándar de C, los archivos de cabecera X.h se reemplazan por cX o X. Por ejemplo:
 
-.. code-block:: c
+.. code-block::
 
 	#include <stdlib.h>                   #include <cstdlib>    
 
@@ -93,7 +93,7 @@ Ejemplos con namespace
 
 **Ejemplo 1**
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	using namespace std;
@@ -124,7 +124,7 @@ Ejemplos con namespace
 
 **Ejemplo 2**
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	using namespace std;
@@ -159,7 +159,7 @@ Ejemplos con namespace
 
 **Ejemplo 3**
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	using namespace std;
@@ -193,7 +193,7 @@ Ejemplos con namespace
 
 **Ejemplo 4**
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	using namespace std;
