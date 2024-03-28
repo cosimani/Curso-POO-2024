@@ -4,7 +4,7 @@
 
 Clase 06 - POO 2024
 ===================
-(Fecha: 27 de marzo)
+(Fecha: 3 de abril)
 
 
 
