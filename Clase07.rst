@@ -14,6 +14,10 @@ Registro en video de algunos temas de la clase de hoy
 
 `QNetworkAccessManager y colocar imagen en login 2023 <https://youtu.be/PFSWwS-RHyI>`_
 
+`Login con imagen generando código con el chat 2024 <https://youtu.be/vVbO58KlNO8>`_
+
+
+
 
 
 
