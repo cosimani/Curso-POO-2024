@@ -17,7 +17,7 @@ Registro en video de algunos temas de la clase de hoy
 
 `QNetworkAccessManager imagen de internet 2021 <https://youtu.be/JtENM7t2zxE>`_
 
-`QNetworkAccessManager y colocar imagen en login 2023 <https://youtu.be/PFSWwS-RHyI>`_
+
 
 
 QGroupBox
@@ -184,30 +184,3 @@ Clase QNetworkProxyFactory
 	}
 
 
-
-
-Obtener una imagen desde internet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block::
-
-	void Principal::slot_descargaFinalizada( QNetworkReply * reply )  {
-	    QImage image = QImage::fromData( reply->readAll() );
-	}
-
-
-
-Ejercicio 14 (continuación):
-============================
-
-- Publicar en la ventana de Login, la temperatura actual en la Ciudad de Córdoba. Usar alguna API disponible.
-- Agregar un método en Login que permita mostrar u ocultar la información de la temperatura.
-- Además que la ventana de Login tenga como background una imagen descargada de interner, centrada y adaptada en tamaño, sin deformar su aspecto y que permita al usuario que modifique el tamaño del Login y que se siga viendo correctamente la imagen.
-- Agregar un método en Login que permita indicar la URL de la imagen que se mostrará en el background. En caso que nunca se invoque a este método, ninguna imagen se mostrará.
-
-
-Ejercicio 16 (continuación):
-============================
-
-- Que el endpoint para validar a los usuarios sea con un POST y que devuelva "denegado" o que devuelva el nombre y el apellido del usuario en el siguiente formato: "Juan Carlos::Ponce"
-- Probar el funcionamiento de este endpoint mediante la web de prueba de FastAPI.
