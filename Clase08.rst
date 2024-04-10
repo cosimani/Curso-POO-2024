@@ -18,7 +18,7 @@ Registro en video de algunos temas de la clase de hoy
 Array como parámetro en funciones
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	using namespace std;
@@ -45,7 +45,7 @@ Array como parámetro en funciones
 Constructores con argumentos por defecto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: c
+.. code-block::
 
 	class ClaseA  {
 	public:
@@ -93,7 +93,7 @@ Desafío
 
 - Escribir la salida por consola de la siguiente aplicación:
 
-.. code-block:: c
+.. code-block::
 
 	#include <QApplication>
 	#include <QDebug>
