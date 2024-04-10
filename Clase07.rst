@@ -67,6 +67,111 @@ Notación octal y hexadecimal
 
 
 
+Punteros a punteros
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block::
+
+	char cadena[ 2 ][ 3 ];
+	cadena[ 0 ][ 0 ] = 'f';
+	cadena[ 0 ][ 1 ] = 'u';
+	cadena[ 0 ][ 2 ] = 'e';
+	cadena[ 1 ][ 0 ] = 'f';
+	cadena[ 1 ][ 1 ] = 'u';
+	cadena[ 1 ][ 2 ] = 'i';
+
+	//    Mejor así
+
+	char cadena[ 2 ][ 3 ];
+	cadena[ 0 ][ 0 ] = 's';
+	cadena[ 0 ][ 1 ] = 'i';
+	cadena[ 0 ][ 2 ] = '\000';
+	cadena[ 1 ][ 0 ] = 'n';
+	cadena[ 1 ][ 1 ] = 'o';
+	cadena[ 1 ][ 2 ] = '\000';
+ 
+Array ≡ puntero
+^^^^^^^^^^^^^^^
+
+- Cuando declaramos un array
+- Estamos declarando un puntero al primer elemento.
+
+.. code-block::
+
+	char arreglo[ 5 ];
+	char * puntero;
+	puntero = arreglo;  // Equivale a puntero = &arreglo[ 0 ];
+
+Volviendo a puntero a puntero
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block::
+
+	char cadena[ 2 ][ 3 ] = { { 's', 'i', '\000' }, { 'n', 'o', '\000' } };
+	// Y si fuera char cadena[ 2 ][ 3 ] = { { 's', 'i', '-' }, { 'n', 'o', '\000' } };
+	char * p1;
+	char * p2;
+
+	p1 = cadena[ 0 ];   // p1 = &cadena[ 0 ][ 0 ];
+	p2 = cadena[ 1 ];   // p2 = &cadena[ 1 ][ 0 ];
+
+	cout << p1;  // si  
+	cout << p2;  // no
+	
+	cout << *p1;  // ?
+	cout << *p2;  // ?
+
+	// Es decir:
+	//    El identificador de un arreglo unidimensional 
+	//    es considerado un puntero a su primer elemento.
+
+**Ejemplo**
+
+.. code-block::
+
+	char p1[] = { 'a', 'b', 'c', 'd', 'e' };
+	cout << "Letra " << *p1;   // Letra a
+	cout << "Letra " << p1[ 0 ];   // Letra a
+
+	char m2[][ 5 ] = { { 'a', 'b', 'c', 'd', 'e' }, { 'A', 'B', 'C', 'D', 'E' } };
+	cout << "Letra " << **m2;          // Letra a
+	cout << "Letra " << m2[ 0 ][ 0 ];      // Letra a
+	cout << "Letra " << m2[ 1 ][ 3 ];      // Letra D
+	cout << "Letra " << *( *( m2 + 1 ) + 3 );  // Letra D
+
+**Extendiendo a arreglos de cualquier dimensión**
+
+.. code-block::
+
+	m[ a ] == *( m + a )
+	m[ a ][ b ] == *( *( m + a ) + b )
+	m[ a ][ b ][ c ] == *( *( *( m + a ) + b ) + c )
+
+	//    Si nos referimos al primer elemento
+
+	m[ 0 ] == *m
+	m[ 0 ][ 0 ] == **m
+	m[ 0 ][ 0 ][ 0 ] == ***m
+
+
+
+Parámetros desde la línea de comandos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Escribir el siguiente programa y ejecutarlo desde la línea de comandos para ver el uso de estos parámetros:
+
+.. code-block::
+
+	#include <iostream>
+
+	int main( int argc, char ** argv )  {
+	    std::cout << "Hay " << argc << " argumentos:" << std::endl;
+	    for ( int i = 0 ; i < argc ; ++i ) {
+	        std::cout << argv[ i ] << std::endl;
+	    }
+	}
+
+
 
 Obtener una imagen desde internet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
