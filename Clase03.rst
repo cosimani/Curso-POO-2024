@@ -18,7 +18,7 @@ Cadena de caracteres
 
 - Al estilo C	
 
-.. code-block:: c
+.. code-block::
 
 	#include <string.h>
 
@@ -28,7 +28,7 @@ Cadena de caracteres
 	
 - Con C++ usamos   
 
-.. code-block:: c
+.. code-block::
 
 	#include<string>
 
@@ -49,7 +49,7 @@ Punteros
 
 **Declaración**
 
-.. code-block:: c
+.. code-block::
 
 	int * entero;     // entero es un puntero a int
 	char * caracter;  // puntero a char
@@ -60,7 +60,7 @@ Punteros
 
 **Punteros a variables**
 
-.. code-block:: c
+.. code-block::
 
 	int entero;         // entero es una variable int
 	int * pEntero;      // pEntero es un puntero a int
@@ -68,7 +68,7 @@ Punteros
 
 **Arrays y punteros**
 
-.. code-block:: c
+.. code-block::
 
 	int miArray[ 10 ];	// miArray es como un puntero al primer elemento
 	int* puntero;
@@ -87,7 +87,7 @@ Punteros
 Clases
 ======
 
-.. code-block:: c
+.. code-block::
 
 	class Poste  {
 	    // Lista de miembros (generalmente funciones y datos)
@@ -97,7 +97,7 @@ Clases
 	};
 
 
-.. code-block:: c
+.. code-block::
 
 	class Poste;  // Esto es la declaración de una clase.
 
@@ -112,7 +112,7 @@ Clases
 
 **Ejemplo:**
 
-.. code-block:: c
+.. code-block::
 
 	#include <iostream>
 	
@@ -151,7 +151,7 @@ Clases
 
 **Constructor**
 
-.. code-block:: c
+.. code-block::
 
 	class Poste  {
 	private:
@@ -182,7 +182,7 @@ Clases
 
 **Cuestiones sobre declaraciones**
 
-.. code-block:: c
+.. code-block::
 
 	Poste poste;  // Llama al constructor sin parámetros. En esta última versión 
 	              // de Poste, esto no serviría, ya que no hay constructor sin parámetros. 
@@ -200,7 +200,7 @@ Clases
 
 **Inicialización de objetos**
 
-.. code-block:: c
+.. code-block::
 
 	// Lo siguiente se permite y funciona casi siempre, (salvo cuando usemos const, que
 	// veremos más adelante). Hay que tener presente que aquí, primero se reserva lugar 
@@ -223,7 +223,7 @@ Clases
 - Es un puntero que ya se exite dentro del ámbito de una clase y apunta al propio objeto instanciado.
 - Se utiliza para acceder a los atributos y métodos.
 
-.. code-block:: c
+.. code-block::
 
 	class Poste  {
 	private:
@@ -253,7 +253,7 @@ Clases
 
 **Destructor**
 
-.. code-block:: c
+.. code-block::
 
 	Poste::~Poste()  {
 	    altura = 0;  
@@ -297,7 +297,7 @@ Ejercicio 3:
 - Elija un nombre para su propio espacio de nombres para todo lo que se haga en este asignatura
 - Luego de elegido el nombre para su namespace, defina una función dentro de ese namespace para devolver el número de versión junto con la fecha de la última actualización de la biblioteca
 
-.. code-block:: c
+.. code-block::
 
 	QString getVersion();  // Devuelve un texto como "v0.0.1 - 20240318"
 
