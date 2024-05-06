@@ -184,3 +184,22 @@ Clase QNetworkProxyFactory
 	}
 
 
+
+Algunas particularidades de QNetworkReply y QNetworkRequest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Para controlar los bytes que se van descargando se puede usar la señal de ``QNetworkReply``:
+
+.. code-block:: c
+
+	void downloadProgress( qint64 bytesRecibidos, qint64 bytesTotal )
+
+- Los campos de la cabecera HTTP se pueden setear con el método de ``QNetworkRequest``:
+
+.. code-block:: c
+
+	void setRawHeader( const QByteArray & nombre, const QByteArray & valor )
+
+	QNetworkRequest request;
+	request.setUrl( QUrl( this->le->text() ) );
+	request.setRawHeader( "User-Agent", "MiNavegador 1.0" );
