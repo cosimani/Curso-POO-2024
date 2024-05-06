@@ -113,8 +113,6 @@ Usando SQLite
 En Qt	
 ^^^^^
 
-- Instalar esta extensión de Chrome para administrar las bases SQLite - https://chrome.google.com/webstore/detail/javascript-based-database/bponbdjkefbmgkfiiphhabghkkfocook
-
 - Requiere QT += sql
 - Para averiguar los controladores disponibles, usamos el método estático:
 
