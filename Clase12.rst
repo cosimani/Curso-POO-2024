@@ -65,11 +65,9 @@ Conexión a base de datos
 		- No es cliente-servidor. La librería (dll) tiene funciones para trabajar
 		- No requiere instalación, directamente con un ejecutable
 		- Para Linux, Windows, Mac OS, Android, iOS, BlackBerry OS, Windows Phone, ...
-		- Algunas aplicaciones que usan SQLite: Skype, Firefox, Photoshop, ...
 			
 	- **MySQL**
 		- Quizás el motor de base de datos más utilizado
-		- Usado por los más grandes: Facebook, Twitter, YouTube, Wikipedia, ...
 		- Requiere una instalación más avanzada para usar con Qt dependiendo el SO que se utilice.
 		
 Usando SQLite
