@@ -12,6 +12,9 @@ Registro en video de algunos temas de la clase de hoy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+
+`AdminDB y su implementación en Login 2024 <https://youtu.be/YoAliQXa4JY>`_
+
 `SQLite, AdminDB y función virtual pura 2023 <https://youtu.be/sJu1Icc4rkQ>`_
 
 `AdminDB 2022 <https://youtu.be/vvGJMZbvM6Q>`_ 
