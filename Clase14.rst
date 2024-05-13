@@ -10,9 +10,9 @@ Clase 14 - POO 2024
 Registro en video de algunos temas de la clase de hoy
 =====================================================
 
-`Incorporación de enum a Login 2024 - <https://youtu.be/9gk9FXsc3mE>`_ 
+`Incorporación de enum a Login 2024 <https://youtu.be/9gk9FXsc3mE>`_ 
 
-`Enum - Manager - QtDesigner con clase propia - signals propias 2023 - <https://youtu.be/pYFpLLU4dJM>`_ 
+`Enum - Manager - QtDesigner con clase propia - signals propias 2023 <https://youtu.be/pYFpLLU4dJM>`_ 
 
 `Enumeraciones - https://youtu.be/pD5sbMKiGSM <https://youtu.be/pD5sbMKiGSM>`_ 
 
