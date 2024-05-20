@@ -162,6 +162,14 @@ Ejercicio 24:
 - También agregar un botón que upermita elegir un archivo de imagen del disco con ``QFileDialog`` y que la dibuje en pantalla con paintEvent.
 
 
+Tareas adicionales:
+===================
+
+- Revisión de entornos virtuales en sus computadoras
+- Instalación y funcionamiento de FastAPI y MongoDB
+- Utilización de Postman para consultar APIs
+- Probar consultas a APIs con el envío de credenciales de usuario, access token o similar
+- Probar, por ejemplo, con MercadoLibre, Instagram, Spotify
 
 
 
