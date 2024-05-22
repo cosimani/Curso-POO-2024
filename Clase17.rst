@@ -293,7 +293,7 @@ Singleton
 Ejemplo de AdminDB como singleton
 =================================
 
-.. code-block:: c++
+.. code-block:: c
 
 	#ifndef ADMINDB_H
 	#define ADMINDB_H
@@ -313,7 +313,7 @@ Ejemplo de AdminDB como singleton
 	#endif // ADMINDB_H
 
 
-.. code-block:: c++
+.. code-block:: c
 
 	#include "admindb.h"
 	#include <QDebug>
@@ -335,7 +335,7 @@ Ejemplo de AdminDB como singleton
 	}
 
 
-.. code-block:: c++
+.. code-block:: c
 
 	#include "admindb.h"
 
