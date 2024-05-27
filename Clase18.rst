@@ -12,7 +12,7 @@ Ejercicio 16 (continuación):
 
 - Este ejercicio viene de la clase 5 y 7.
 - Luego de tener registrados los usuarios en MongoDB y funcionando el endpoint.
-- Acondicionar la clase Login para validar los usuarios desde una aplicación desktop en Qt con el endpoint de FastAPI.
+- Acondicionar la clase Login para validar los usuarios contra el endpoint de FastAPI.
 
 
 
